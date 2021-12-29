@@ -14,5 +14,5 @@ models = [{ 'id': 1, 'model_type': 'time series model with fbprophet'}]
 
 # start the app!
 if __name__ == '__main__':
-    train_model(sys.argv[1], ['ds', 'y'])
+    train_model('train.csv', ['ds', 'y'])
 
