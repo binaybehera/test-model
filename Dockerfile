@@ -18,6 +18,6 @@ COPY model.py runmodel.py savemodel.py  ./
 RUN python savemodel.py
 
 # Command to execute when image loads, this loads the saved model and prints the prediction to the    
-# console. The prediction count is provided as a parameter to your code.
+# console. The prediction count is provided as a parameter to your code. The code should print prediction output to the console in csv format.
 ENTRYPOINT ["python","runmodel.py"]
 CMD ["forecast"]
